@@ -32,7 +32,7 @@
             
                 </label>
                     @error('name')
-                        <p>{{$message}}</p>
+                        <p class="bg-red-500 text-white my-2 rounded-lg text-sm p-2 text-center">{{$message}}</p>
                     @enderror
             </div>
 
@@ -48,7 +48,7 @@
             
                 </label>
                     @error('edad')
-                        <p>{{$message}}</p>
+                        <p class="bg-red-500 text-white my-2 rounded-lg text-sm p-2 text-center">{{$message}}</p>
                     @enderror
             </div>
 
@@ -65,7 +65,7 @@
             
                 </label>
                     @error('materia')
-                        <p>{{$message}}</p>
+                        <p class="bg-red-500 text-white my-2 rounded-lg text-sm p-2 text-center">{{$message}}</p>
                     @enderror
             </div>
 
@@ -82,7 +82,7 @@
             
                 </label>
                     @error('promedio')
-                        <p>{{$message}}</p>
+                        <p class="bg-red-500 text-white my-2 rounded-lg text-sm p-2 text-center">{{$message}}</p>
                     @enderror
             </div>
 

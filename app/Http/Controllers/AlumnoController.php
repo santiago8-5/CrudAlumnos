@@ -80,11 +80,11 @@ class AlumnoController extends Controller
             'promedio' => [
                 'required',
                 'integer',
-                 function ($attribute, $value, $fail) {
-                     if ($value < 70) {
-                         $fail('El promedio debe ser mayor a 70');
-                    }
-                 }
+                function ($attribute, $value, $fail) {
+                    if ($value < 70 || $value > 100) {
+                        $fail('El promedio debe de estar en un rango de 70-100');
+                   }
+                }
             ]
         ]);
 
