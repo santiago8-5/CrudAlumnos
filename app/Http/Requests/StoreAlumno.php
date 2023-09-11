@@ -44,7 +44,11 @@ class StoreAlumno extends FormRequest
                          $fail('El promedio debe de estar en un rango de 70-100');
                     }
                  }
-            ]
+                ],
+
+            'fechaNacimiento' => 'required|date_format:d-m-Y',
+
+            'descripcion' => 'required|max:150'
 
         ];
     }

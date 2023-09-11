@@ -17,8 +17,13 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->integer('edad');
+            $table->string('fechaNacimiento');
             $table->string('materia');
             $table->integer('promedio');
+            $table->string('genero')->nullable();
+            $table->string('lenguaje')->nullable();
+            $table->string('estado');
+            $table->string('descripcion');
             $table->timestamps();
         });
     }
