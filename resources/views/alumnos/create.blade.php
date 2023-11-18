@@ -8,8 +8,22 @@
 
 @section('content')
 
+<div>
+    <style>
+        body {
+            background: #085078;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #85D8CE, #085078);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #85D8CE, #085078);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-<h1 class="font-bold text-4xl text-blue-600 mb-8 text-center">Registrar Alumno</h1>
+        }
+    </style>
+</div>
+
+
+<h1 class="text-4xl font-black mb-8 text-center">Registrar Alumno</h1>
 
 
 <div class="md:flex md:justify-center md:gap-10 md:items-center">
@@ -260,7 +274,7 @@
             <div class="md:flex md:justify-between">
                 <input type="submit" value="Registrar" class="bg-sky-600 hover:bg-sky-700 transition-colors cursor-pointer uppercase font-bold  p-2 text-white rounded-lg">
         
-                
+
                 <a href="{{route('alumnos.index')}}" class="bg-green-600 hover:bg-green-700 transition-colors cursor-pointer uppercase font-bold  p-2 text-white rounded-lg">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-black-500 inline font-bold">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75" />

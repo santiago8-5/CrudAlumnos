@@ -48,7 +48,7 @@ class AlumnoController extends Controller
 
         $alumno = Alumno::create($data);
 
-        return redirect()->route('alumnos.show', $alumno->id);
+        return redirect()->route('alumnos.show', $alumno);
     }
 
 
@@ -56,6 +56,7 @@ class AlumnoController extends Controller
     public function show(Alumno $alumno){
 
         return view('alumnos.show', compact('alumno'));
+
     }
 
 

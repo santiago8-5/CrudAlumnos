@@ -7,51 +7,40 @@
     {{-- @vite('resources/css/app.css') --}}
     <title>@yield('titulo')</title>
     {{-- @vite('resources/js/app.js') --}}
-        <script src="https://cdn.tailwindcss.com"></script> 
-      
+    <script src="https://cdn.tailwindcss.com"></script> 
 
-    
+    <Style>
+        .active{
+            color: blue  !important;
+        }
+    </Style>
 
+
+        
 </head>
 
 <body class="bg-gray-100">
 
 
 
-    <header class="p-5 border-b bg-white shadow">
-
-        <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-3xl font-black">
-                Universidad
-            
-            </h1>
-
-            <nav class="flex gap-2 items-center">
-                <a class="font-bold uppercase text-gray-600 text-sm" href="{{route('alumnos.create')}}"> 
-                    Crear alumno
-                </a>
-            </nav>
-
-
-        </div>
-
-    </header>
+    {{-- HEADER --}}
+    @include('layouts.partials.header')
+    {{-- FIN HEADER --}}
 
 
 
-
+    {{-- CONTENIDO --}}
     <div class="container mx-auto mt-10">
         @yield('content')
-
     </div>
+    {{-- FIN CONTENIDO --}}
 
 
 
+    {{-- FOOTER --}}
 
-    <footer class="mt-10 text-center p-5 text-gray-500 font-bold uppercase">
-         todos los derechos reservados
-        {{now()->year}}
-    </footer>
+    @include('layouts.partials.footer')
+    {{-- FIN FOOTER --}}
 
 
 </body>

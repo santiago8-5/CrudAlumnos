@@ -3,12 +3,28 @@
 @section('titulo', 'Cursos create') {{-- El segundo parametro que se le pasa, es el titulo que va tener por defecto --}}
 
 @section('content')
-    <h1 class="font-bold text-4xl text-blue-600 mb-8 text-center">Modificar un alumno</h1>
+
+<div>
+    <style>
+        body {
+            background: #085078;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #85D8CE, #085078);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #85D8CE, #085078);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+    </style>
+</div>
+
+
+    <h1 class="text-4xl font-black mb-8 text-center">Modificar un alumno</h1>
 
     <div class="md:flex md:justify-center md:gap-10 md:items-center">
 
         <div class="md:w-8/12 p-5">
-            <img src="{{ asset('img/edit.jpg') }}" alt="Imagen registro de usuarios">
+            <img src="{{ asset('img/edit.jpg') }}" alt="Imagen registro de usuarios" >
         </div>
 
 
